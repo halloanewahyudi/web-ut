@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "title":"Lestarikan Keaneka Ragaman Hayati",
+        "subtitle":"Lindungi Bumi",
+        "content":"United Tractors berkomitmen dalam melindungi keanekaragaman hayati di wilayah operasionalnya dengan menjunjung tinggi prinsip yang berkelanjutan, guna menjaga kesinambungan yang harmonis antara lingkungan, manusia, dan kegiatan usaha.",
+        "background":{
+            "video":true,
+            "source":"/clip1.mp4"
+        }
+        
+        },{
+        "id":2,
+        "title":"Our Sustainable Journey",
+        "subtitle":"Taking Step Toward",
+        "content":"Sebagai distributor alat berat terkemuka dan terbesar di Indonesia, United Tractors berkomitmen untuk menjadi perusahaan yang berkelanjutan dan tangguh pada tahun 2030 dan seterusnya melalui tagline kami, Moving as One.",
+        "background":{
+            "video":true,
+            "source":"/vid-2.mp4"
+        }
+    }
+]

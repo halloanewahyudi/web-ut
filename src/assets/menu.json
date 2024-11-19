@@ -1,0 +1,222 @@
+[
+    
+    {
+        "name": "Tentang UT",
+        "child": [
+            {
+                "name": "Sekilas Perusahaan",
+                "child": ""
+            },
+            {
+                "name": "Visi Misi",
+                "child": ""
+            },
+            {
+                "name": "Tagline",
+                "child": ""
+            },
+            {
+                "name": "Struktur Bisnis",
+                "child": ""
+            },
+            {
+                "name": "Jejak Langkah",
+                "child": ""
+            },
+            {
+                "name": "Penghargaan",
+                "child": ""
+            },
+            {
+                "name": "Dewan Komisaris",
+                "child": ""
+            },
+            {
+                "name": "Direksi",
+                "child": ""
+            },
+            {
+                "name": "Struktur Organisasi",
+                "child": ""
+            }
+        ]
+    },
+    {
+        "name": "Bisnis",
+        "child": [
+            {
+                "name": "Mesin Konstruksi",
+                "child": ""
+            },
+            {
+                "name": "Kontraktor Penambangan",
+                "child": ""
+            },
+            {
+                "name": "Pertambanagn",
+                "child": ""
+            },
+            {
+                "name": "Industri Konstruksi",
+                "child": ""
+            },
+            {
+                "name": "Energi",
+                "child": ""
+            }
+        ]
+    },
+    {
+        "name": "Hubungan Investor",
+        "child": [
+            {
+                "name": "Ikhtisar Hubungan Investor",
+                "child": ""
+            },
+            {
+                "name": "Laporan",
+                "child": ""
+            },
+            {
+                "name": "Komposisi Pemegang Saham",
+                "child": ""
+            },
+            {
+                "name": "Informasi Pemegang Saham",
+                "child": ""
+            },
+            {
+                "name": "Rapat Umum Pemegang Saham",
+                "child": ""
+            },
+            {
+                "name": "Informasi Dividen",
+                "child": ""
+            },
+            {
+                "name": "Kegiatan & Presentasi",
+                "child": ""
+            },
+            {
+                "name": "Ulasan Analis",
+                "child": ""
+            },
+            {
+                "name": "Keterbukaan Informasi",
+                "child": ""
+            }
+        ]
+    },
+    {
+        "name": "Tata Kelola",
+        "child": [
+            {
+                "name": "Anggaran Dasar",
+                "child": ""
+            },
+            {
+                "name": "Kode Etik Perusahaan",
+                "child": ""
+            },
+            {
+                "name": "Komite Audit",
+                "child": ""
+            },
+            {
+                "name": "Komite Nominasi & Remunerasi",
+                "child": ""
+            },
+            {
+                "name": "Sekertaris Perusahaan",
+                "child": ""
+            },
+            {
+                "name": "Audut Internal",
+                "child": ""
+            },
+            {
+                "name": "Pedoman Direksi",
+                "child": ""
+            },
+            {
+                "name": "Pedoman Dewan Komisaris",
+                "child": ""
+            },
+            {
+                "name": "Manajemen Resiko",
+                "child": ""
+            },
+            {
+                "name": "Sistem Pelaporan Pelanggaram",
+                "child": ""
+            },
+            {
+                "name": "Prospektus",
+                "child": ""
+            },
+            {
+                "name": "Kenijakan Lainya",
+                "child": ""
+            }
+        ]
+    },
+    {
+        "name": "Keberlanjutan",
+        "child": [
+            {
+                "name": "Program",
+                "child": ""
+            },
+            {
+                "name": "Yayasan",
+                "child": ""
+            },
+            {
+                "name": "Lapoaran Keberlanjutan",
+                "child": ""
+            },
+            {
+                "name": "Buletin Keberlanjutan Ahemece",
+                "child": ""
+            },
+            {
+                "name": "Beranda",
+                "child": ""
+            }
+        ]
+    },
+    {
+        "name": "Sumberdaya Manusia",
+        "child": [
+            {
+                "name": "Karir",
+                "child": ""
+            },
+            {
+                "name": "Corporate University",
+                "child": ""
+            }
+        ]
+    },
+    {
+        "name": "Ruang Media",
+        "child": [
+            {
+                "name": "Siaran Pers",
+                "child": ""
+            },
+            {
+                "name": "Galeri",
+                "child": ""
+            },
+            {
+                "name": "Musium Virtual UT",
+                "child": ""
+            }
+        ]
+    },
+    {
+        "name": "Kontak",
+        "child": ""
+    }
+]
