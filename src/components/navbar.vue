@@ -36,7 +36,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </nav>
 
         <nav class="nav-bawah nav-mobile lg:hidden">
