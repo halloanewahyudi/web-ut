@@ -7,10 +7,15 @@ import { onMounted, ref } from 'vue';
 import sectionOneVue from './components/sectionOne.vue';
 import sectinTwo from './components/sectionTwo.vue';
 import sectionThree from './components/sectionThree.vue';
+import sectionFour from './components/sectionFour.vue';
 import { ScrollView } from 'potiah'
 
-
 const duration = ref(2.5)
+const setelahMovingOne = ref(false)
+onMounted(()=>{
+  
+})
+
 </script>
 
 <template>
@@ -23,6 +28,7 @@ const duration = ref(2.5)
 <sectionOneVue />
 <sectinTwo />
 <sectionThree />
+<sectionFour />
 
 </ScrollView> <!-- end scrollview -->
 

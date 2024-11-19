@@ -9,4 +9,6 @@ body{
     font-weight: 200-800;
     font-style: normal;
     letter-spacing: .7px;
+
+    @apply overflow-x-hidden
 }
