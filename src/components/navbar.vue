@@ -3,7 +3,7 @@
         <div class="atas py-2 ">
             <div class="container">
                 <div class="nav-wrap flex items-center justify-between gap-6">
-                    <img src="/logo-ut.png" alt="" srcset="" class="h-10 lg:h-12">
+                    <img src="/logo-ut-white.png" alt="" srcset="" class="h-10 lg:h-12">
                     <img src="/logosatu.png" alt="" class="h-10 lg:h-14">
                 </div>
             </div>
