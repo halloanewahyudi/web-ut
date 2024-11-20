@@ -39,7 +39,7 @@
             </div> 
         </nav>
 
-        <nav class="nav-bawah nav-mobile lg:hidden">
+        <nav class="nav-bawah nav-mobile hidden">
             <div>
                 <ul class="">
                     <li v-for="(menu, index) in menus" :key="index" @mouseenter="select(item)"

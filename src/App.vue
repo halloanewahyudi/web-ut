@@ -9,6 +9,7 @@ import sectionFour from './components/sectionFour.vue';
 import sectionFive from './components/sectionFive.vue';
 import sectionSix from './components/sectionSix.vue';
 import Footer from './components/footer.vue';
+import slidethumb from './components/slidethumb.vue';
 
 import { ScrollView } from 'potiah'
 
@@ -29,7 +30,7 @@ onErrorCaptured((err, instance, info) => {
 
   <div class="min-h-screen relative overflow-hidden">
     <navbarVue class="absolute top-0 left-1/2 -translate-x-1/2 w-full z-50 " />
-    <hero />
+    <slidethumb />
   </div>
 <sectionOneVue />
 <sectinTwo />
@@ -38,7 +39,7 @@ onErrorCaptured((err, instance, info) => {
 <sectionFive />
 <sectionSix />
 </ScrollView> <!-- end scrollview -->
-<Footer />
+<footer />
 </template>
 <style scoped>
 .smooth-wrapper {

@@ -15,13 +15,29 @@
                     </div>
                 </SwiperSlide>
             </Swiper>
+
+            <Swiper
+      class="thumb-swiper relative"
+      :modules="[Thumbs]"
+      @swiper="onThumbSwiper"
+      :slides-per-view="2"
+      :space-between="10"
+      :watch-slides-progress="true"
+      :loop="true"
+      centeredSlides
+    >
+      <SwiperSlide v-for="(slide, index) in slideContent" :key="index" class="swiper-slide">
+        <h3 class="text-3xl font-bold text-white">{{ slide.title }}</h3>
+      </SwiperSlide>
+    </Swiper>
         </video-background>
+     
     </div>
 </template>
 
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Autoplay } from 'swiper/modules';
+import { Autoplay, Thumbs } from 'swiper/modules';
 import slideContent from '@/assets/slide-content.json'
 import 'swiper/css';
 import VideoBackground from 'vue-responsive-video-background-player'
@@ -48,6 +64,14 @@ const onSlideChange = (swiper) => {
     });
 };
 
+/* Swiper thumbs */
+const thumbsSwiper = ref(null);
+
+/* Event untuk menangkap Swiper thumbnail */
+const onThumbSwiper = (swiper) => {
+  thumbsSwiper.value = swiper;
+};
+
 onMounted(() => {
     slide.value = document.querySelector('.slide-content');
 });
@@ -69,4 +93,5 @@ onMounted(() => {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0) 28%, rgba(0,0,0,0.7819502801120448) 100%);
 }
+
 </style>
