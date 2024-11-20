@@ -11,9 +11,10 @@
                             <p>{{ slide.subtitle }}</p>
                             <h3 class="text-2xl font-medium mb-5 break-words whitespace-normal">{{ slide.title }}</h3>
                             <p class="break-words whitespace-normal">{{ slide.content }}</p>
-                            <div v-if="slide.id === 1">
-                                <a href="#" class="bg-brand-yellow py-2 px-4 rounded-xl"> </a>
-                            </div>
+                            <div v-if="slide.id === 1" class="flex gap-4 items-center flex-wrap">
+                                <a href="#" class="py-2 px-4  border border-white rounded-xl hover:bg-white hover:text-brand-blue inline-block mt-5 duration-200"> www.agincourtresources.com </a>
+                                <a href="#" class="py-2 px-4  border border-white rounded-xl hover:bg-white hover:text-brand-blue inline-block mt-5 duration-200"> www.turanggaresources.com</a>
+                                </div>
                         </div>
                     </swiper-slide>
                 </swiper>
