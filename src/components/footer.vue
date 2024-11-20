@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-brand-blue rounded-t-3xl lg:rounded-t-[100px] text-blue-200 pt-20 pb-6">
+    <div class="footer bg-brand-blue rounded-t-3xl lg:rounded-t-[100px] text-blue-200 pt-20 pb-6">
         <div class="container  flex flex-col gap-6">
             <div class="grid grid-cols-1 lg:grid-cols-3">
             <div class="">
@@ -42,4 +42,10 @@ import linkedin from '@/components/icons/linkedin.vue'
 import facebook from '@/components/icons/facebook.vue'
 </script>
 
-<style scoped></style>
+<style scoped>
+.footer{
+    background-image: url('/bg-footer.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+</style>
