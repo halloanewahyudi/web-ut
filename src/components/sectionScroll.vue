@@ -2,17 +2,17 @@
   <section ref="featItem" class="feat-item lg:min-h-screen">
     <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
       <!-- Bagian kiri (gambar) -->
-      <div class="kiri bg-brand-blue">
-        <img ref="fixedImage" :src="props.img" alt="Fixed Image" class="fixed-image object-cover" />
+      <div class="kiri bg-brand-blue relative ">
+        <img ref="fixedImage" :src="props.img" :alt="props.title" class="fixed-image object-cover" />
       </div>
 
       <!-- Bagian kanan (teks) -->
       <div class="kanan lg:min-h-screen p-6 lg:p-12 xl:p-20 flex flex-col  gap-8">
-        <h2 class="text-3xl lg:text-5xl xl:text-8xl font-semibold break-words" v-html="props.title"></h2>
+        <h2 class="text-3xl lg:text-5xl xl:text-8xl  break-words" v-html="props.title"></h2>
         <div>
           <div v-if="!showMore" v-html="props.content.substring(0, 300)" class="leading-relaxed"></div>
           <div v-else v-html="props.content" class="leading-relaxed text-more"></div>
-          <button class="max-w-max inline-block text-brand-blue" v-if="props.content.length > 300"  @click="showMore = !showMore">{{
+          <button class="max-w-max inline-block text-white text-sm py-2 px-4 rounded-lg bg-brand-blue mt-5" v-if="props.content.length > 300"  @click="showMore = !showMore">{{
             showMore ? ' Kurangi -' : ' Selengkapnya +' }} </button>
 
         </div>
@@ -43,10 +43,6 @@ const fixedImage = ref(null); // Ref untuk elemen gambar
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.from('.text-more',{
-    
-  })
-
   // Setup animasi GSAP
   gsap.timeline({
     scrollTrigger: {
@@ -65,7 +61,7 @@ onMounted(() => {
       fixedImage.value,
       { opacity: 0, duration: 2 }, // Memudar saat akhir scroll
       "+=1" // Tambahkan sedikit jeda sebelum memulai fade out
-    );
+    )
 });
 
 onUnmounted(() => {

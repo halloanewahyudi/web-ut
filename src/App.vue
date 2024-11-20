@@ -38,8 +38,9 @@ onErrorCaptured((err, instance, info) => {
 <sectionFour />
 <sectionFive />
 <sectionSix />
+
 </ScrollView> <!-- end scrollview -->
-<footer />
+<Footer />
 </template>
 <style scoped>
 .smooth-wrapper {
