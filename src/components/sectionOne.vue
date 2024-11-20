@@ -1,7 +1,7 @@
 <template>
-    <div class="title-section py-20 min-h-screen">
+    <div class="title-section py-20 lg:min-h-screen">
         <div class="container">
-            <div class="flex flex-col justify-center items-center gap-5 min-h-screen text-brand-blue text-center">
+            <div class="flex flex-col justify-center items-center gap-5 lg:min-h-screen text-brand-blue text-center">
                 <h1 class="title-one text-5xl lg:text-6xl xl:text-8xl font-extrabold"> United Tractors </h1>
                 <h1 class="title-two text-5xl lg:text-4xl xl:text-6xl  font-extrabold"> Sustainability Initiatives</h1>
             </div>

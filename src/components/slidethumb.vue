@@ -11,6 +11,9 @@
                             <p>{{ slide.subtitle }}</p>
                             <h3 class="text-2xl font-medium mb-5 break-words whitespace-normal">{{ slide.title }}</h3>
                             <p class="break-words whitespace-normal">{{ slide.content }}</p>
+                            <div v-if="slide.id === 1">
+                                <a href="#" class="bg-brand-yellow py-2 px-4 rounded-xl"> </a>
+                            </div>
                         </div>
                     </swiper-slide>
                 </swiper>

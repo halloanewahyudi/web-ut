@@ -1,5 +1,5 @@
 <template>
-  <section ref="featItem" class="feat-item min-h-screen">
+  <section ref="featItem" class="feat-item lg:min-h-screen">
     <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
       <!-- Bagian kiri (gambar) -->
       <div class="kiri bg-brand-blue">
@@ -7,7 +7,7 @@
       </div>
 
       <!-- Bagian kanan (teks) -->
-      <div class="kanan min-h-screen p-6 lg:p-12 xl:p-20 flex flex-col gap-8">
+      <div class="kanan lg:min-h-screen p-6 lg:p-12 xl:p-20 flex flex-col  gap-8">
         <h2 class="text-3xl lg:text-5xl xl:text-8xl font-semibold break-words" v-html="props.title"></h2>
         <div>
           <div v-if="!showMore" v-html="props.content.substring(0, 300)" class="leading-relaxed"></div>
@@ -76,7 +76,7 @@ onUnmounted(() => {
 
 <style scoped>
 .feat-item {
-  padding: 100px 0;
+ 
 }
 
 .fixed-image {
