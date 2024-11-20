@@ -8,8 +8,6 @@ import sectionThree from './components/sectionThree.vue';
 import sectionFour from './components/sectionFour.vue';
 import sectionFive from './components/sectionFive.vue';
 
-@Farelardafa3@
-
 import { ScrollView } from 'potiah'
 
 const duration = ref(2.5)
