@@ -28,7 +28,26 @@ gsap.registerPlugin(ScrollTrigger)
 onMounted(() => {
 const images = document.querySelectorAll('.logo img');
 
+
+const scolltitle = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.section',
+    start: 'center bottom',
+    end: 'center center',
+    scrub: 1,
+  }
+})
+scolltitle.from('.section .title',{
+    opacity:0,
+    y:100
+})
+scolltitle.from('.section p',{
+    opacity:0,
+    y:100
+})
+
 const tl = gsap.timeline({
+    duration:2,
   scrollTrigger: {
     trigger: '.section',
     start: 'center bottom',
@@ -38,8 +57,7 @@ const tl = gsap.timeline({
 });
 
 // Animasi fade-up secara bergantian
-tl.from('.section .title',{opacity:0})
-tl.from('.section p',{opacity:0})
+
 images.forEach((image, index) => {
   tl.fromTo(image, { opacity: 0 , y:100}, { opacity: 1, y:0 }, `+=${index * .5}`);
 });

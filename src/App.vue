@@ -1,19 +1,20 @@
 <script setup>
-
+import { onMounted, ref } from 'vue';
 import navbarVue from './components/navbar.vue'
 import hero from '@/components/hero.vue'
-
-import { onMounted, ref } from 'vue';
 import sectionOneVue from './components/sectionOne.vue';
 import sectinTwo from './components/sectionTwo.vue';
 import sectionThree from './components/sectionThree.vue';
 import sectionFour from './components/sectionFour.vue';
+import sectionFive from './components/sectionFive.vue';
+
+
 import { ScrollView } from 'potiah'
 
 const duration = ref(2.5)
 const setelahMovingOne = ref(false)
 onMounted(()=>{
-  
+
 })
 
 </script>
@@ -29,7 +30,7 @@ onMounted(()=>{
 <sectinTwo />
 <sectionThree />
 <sectionFour />
-
+<sectionFive />
 </ScrollView> <!-- end scrollview -->
 
 </template>
