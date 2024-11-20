@@ -32,13 +32,11 @@
     content: String,
   });
   
-
+  const featItem = ref(null); // Ref untuk elemen utama
+  const fixedImage = ref(null); // Ref untuk elemen gambar
   
   onMounted(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    const featItem = ref(null); // Ref untuk elemen utama
-    const fixedImage = ref(null); // Ref untuk elemen gambar
   
     // Setup animasi GSAP
     gsap.timeline({

@@ -1,13 +1,15 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import { fileURLToPath, URL } from 'url';
-// https://vite.dev/config/
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+
 export default defineConfig({
   plugins: [vue()],
-   resolve:{
-    alias:{
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-     }
-   }
-  
-})
+  build: {
+    sourcemap: true, // Tambahkan sourcemap untuk debugging
+    target: 'esnext', // Pastikan menggunakan modern ES
+  },
+  resolve: {
+    alias: {
+      '@': '/src', // Pastikan alias terselesaikan dengan benar
+    },
+  },
+});
