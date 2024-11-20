@@ -1,12 +1,12 @@
 <template>
     <div>
-        <video-background src="/clip1.mp4" class="w-full min-h-screen flex flex-col justify-center items-center">
+        <video-background src="/utclip4.mp4" class="w-full min-h-screen flex flex-col justify-center items-center">
             <Swiper class="hero-swiper" :modules="[Autoplay]" direction="horizontal" :slides-per-view="1"
                 :space-between="0" :autoplay="{ delay: 7000 }" :speed="50" :loop="true" @swiper="onSwiper"
                 @slideChange="onSlideChange">
                 <SwiperSlide v-for="(slide, index) in slideContent" :key="index"
                     class="min-h-screen flex flex-col justify-center items-center relative">
-                    <div class="layer"></div>
+                  <!--   <div class="layer"></div> -->
                     <div ref="slide"
                         class="slide-content max-w-screen-md rounded-2xl p-6 bg-brand-blue backdrop-blur-lg bg-opacity-30 text-white absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 flex flex-col gap-5 text-center">
                         <p class="text-xl italic">{{ slide.subtitle }}</p>

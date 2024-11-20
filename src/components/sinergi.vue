@@ -46,17 +46,16 @@ const onSwiper = (swiper) => {
     :autoplay="{delay:1, disableOnInteraction: false}" 
     :loop="true" 
     :speed="5000" 
-
     :centered-slides="true" 
    
     :modules="modules"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
     class="marquee-swiper">
-        <SwiperSlide v-for="slide in content" :key="slide" >
+        <SwiperSlide v-for="slide in 6" :key="slide" >
             <div class="max-w[400px] w-full relative group">
-                <img :src="slide.image" alt="" class="max-w-[400px] w-full h-[300px] object-cover rounded-xl opacity-90 group-hover:opacity-100 duration-200">
-                <div class="absolute bottom-4 left-4 group-hover:translate-x-2 group-hover:text-xl duration-200">{{ slide.title }}</div>
+                <img :src="`sinergi${slide}.jpg`" alt="" class="max-w-[400px] w-full h-[300px] object-cover rounded-xl opacity-90 group-hover:opacity-100 duration-200">
+          
             </div>
            
         </SwiperSlide>

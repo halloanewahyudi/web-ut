@@ -7,6 +7,8 @@ import sectinTwo from './components/sectionTwo.vue';
 import sectionThree from './components/sectionThree.vue';
 import sectionFour from './components/sectionFour.vue';
 import sectionFive from './components/sectionFive.vue';
+import sectionSix from './components/sectionSix.vue';
+import Footer from './components/footer.vue';
 
 import { ScrollView } from 'potiah'
 
@@ -34,8 +36,9 @@ onErrorCaptured((err, instance, info) => {
 <sectionThree />
 <sectionFour />
 <sectionFive />
+<sectionSix />
 </ScrollView> <!-- end scrollview -->
-
+<Footer />
 </template>
 <style scoped>
 .smooth-wrapper {
