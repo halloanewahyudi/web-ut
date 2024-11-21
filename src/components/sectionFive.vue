@@ -44,7 +44,7 @@ onMounted(() => {
 <style  scoped>
 
 .one-spirit{
-  background-image: url('./bg-spirit.png') ;
+  background-image: url('/bg-spirit.png') ;
 }
 
 .one-spirit  .spirit-title {
