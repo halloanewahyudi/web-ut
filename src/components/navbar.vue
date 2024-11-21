@@ -53,7 +53,7 @@
                 <div class="bg-white bg-opacity-95 p-4 rounded-xl" >
                     <div class="flex justify-between items-center h-6">
                     <hamburger  @click="bukaMenu"/>
-                    <div class="flex border border-brand-yellow rounded-xl lang overflow-hidden">
+                    <div class="flex border border-brand-black rounded-xl lang overflow-hidden">
                        <a href="" class="py-1 px-2 active">ID</a> <a href="" class="py-1 px-2">EN</a>
                     </div>
                     <search class="w-5 h-5" />
