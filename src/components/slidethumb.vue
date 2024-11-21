@@ -9,7 +9,7 @@
                     <swiper-slide v-for="slide in Slides" :key="slide" class="">
                         <div class="">
                             <p>{{ slide.subtitle }}</p>
-                            <h3 class="text-3xl text-brand-yellow font-medium mb-5 break-words whitespace-normal">{{ slide.title }}</h3>
+                            <h3 class="text-3xl  font-medium mb-5 break-words whitespace-normal">{{ slide.title }}</h3>
                             <p class="break-words whitespace-normal">{{ slide.content }}</p>
                             <div v-if="slide.id === 1" class="flex gap-4 items-center flex-wrap">
                                 <a href="#" class="py-2 px-4  border border-white rounded-xl hover:bg-white hover:text-brand-blue inline-block mt-5 duration-200"> www.agincourtresources.com </a>
