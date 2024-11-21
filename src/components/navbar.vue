@@ -32,7 +32,7 @@
                             </div>
                         </div>
                     </div>
-                    <div v-if="selectItem" class="nav-dhild">
+                   <!--  <div v-if="selectItem" class="nav-dhild">
                         <div class="p-6">
                             <ul class="flex flex-col sub-menu">
                                 <li v-for="item in selectItem.child " :key="item">
@@ -42,7 +42,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </nav>

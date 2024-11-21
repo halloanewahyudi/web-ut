@@ -6,7 +6,7 @@
                 <p class="description">
                     United Tractors berdedikasi melayani pelanggan dengan sepenuh hati dan mengutamakan kerja sama.
                 </p>
-                <p class="text-3xl lg:text-6xl font-semibold mt-3 text-brand-yellow"> Lini Bisnis</p>
+                <p class="text-3xl lg:text-3xl font-semibold mt-3 text-brand-yellow"> Lini Bisnis</p>
             </div>
             <Spirit />
          </div>

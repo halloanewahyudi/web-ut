@@ -12,7 +12,7 @@
         <div>
           <div v-if="!showMore" v-html="props.content.substring(0, 300)" class="leading-relaxed"></div>
           <div v-else v-html="props.content" class="leading-relaxed text-more"></div>
-          <button class="max-w-max inline-block text-white text-sm py-2 px-4 rounded-lg bg-brand-blue mt-5" v-if="props.content.length > 300"  @click="showMore = !showMore">{{
+          <button class="max-w-max inline-block text-white text-sm py-2 px-4 rounded-lg bg-brand-blue hover:bg-brand-black hover:text-white duration-300 mt-5" v-if="props.content.length > 300"  @click="showMore = !showMore">{{
             showMore ? ' Kurangi -' : ' Selengkapnya +' }} </button>
 
         </div>
