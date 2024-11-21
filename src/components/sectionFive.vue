@@ -4,8 +4,9 @@
             <div class="max-w-xl mx-auto text-center group">
                 <h2 class="spirit-title text-5xl lg:text-6xl xl:text-8xl mb-5 hover:text-brand-yellow"> <a href="#">One Spirit </a> </h2>
                 <p class="description">
-                    United Tractors berdedikasi melayani pelanggan dengan sepenuh hati dan mengutamakan kerja sama, kolaborasi dan menciptakan praktik berkelanjutan jangka panjang.
+                    United Tractors berdedikasi melayani pelanggan dengan sepenuh hati dan mengutamakan kerja sama.
                 </p>
+                <p class="text-3xl lg:text-6xl font-semibold mt-3 text-brand-yellow"> Lini Bisnis</p>
             </div>
             <Spirit />
          </div>

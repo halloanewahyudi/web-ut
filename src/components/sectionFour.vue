@@ -7,7 +7,7 @@
                 <p>United Tractors berkomitmen menjadi mitra terpercaya bagi pelanggan dengan memberikan solusi dan nilai tambah.  berfokus pada keberlanjutan jangka panjang.
                 </p>
             </div>
-            <div class="max-w-screen-xl mx-auto">
+            <div class="max-w-screen-xl mx-auto relative">
                 <div class="logo flex flex-wrap justify-center items-center gap-5 lg:gap-10">
                     <img src="/utrees.png" alt="" class="h-40 w-40 border rounded-full shadow-xl object-contain hover:scale-105  duration-300">
                     <img src="/utfuture.png" alt="" class="h-40 w-40 border rounded-full shadow-xl object-contain hover:scale-105  duration-300">
