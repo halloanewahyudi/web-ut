@@ -30,7 +30,7 @@ const content = ref([
     }
 ])
 
-const modules = ref([ Navigation, Pagination])
+const modules = ref([ Navigation, Pagination, Autoplay])
 
 const onSwiper = (swiper) => {
         console.log(swiper);
@@ -47,6 +47,7 @@ const onSwiper = (swiper) => {
     :loop="true" 
     :speed="1500" 
     :centered-slides="true" 
+    :autoplay="{delay:3000}"
     :modules="modules"
     @swiper="onSwiper"
     @slideChange="onSlideChange"

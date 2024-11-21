@@ -8,6 +8,7 @@ import sectionThree from './components/sectionThree.vue';
 import sectionFour from './components/sectionFour.vue';
 import sectionFive from './components/sectionFive.vue';
 import sectionSix from './components/sectionSix.vue';
+import news from './components/news.vue';
 import Footer from './components/footer.vue';
 import slidethumb from './components/slidethumb.vue';
 
@@ -38,7 +39,7 @@ onErrorCaptured((err, instance, info) => {
 <sectionFour />
 <sectionFive />
 <sectionSix />
-
+<!-- <news /> -->
 </ScrollView> <!-- end scrollview -->
 <Footer />
 </template>
