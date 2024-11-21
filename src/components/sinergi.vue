@@ -7,25 +7,17 @@ import 'swiper/css/pagination';
 
 const content = ref([
     {
-        image:'/spirit1.png',
+        image:'/img/one-synergy-1.jpg',
         title:'Mesin Konstruksi'
     },
 
     {
-        image:'/spirit2.jpg',
+        image:'/img/one-synergy-2.jpg',
         title:'Kontraktor Penambangan'
     },
     {
-        image:'/spirit3.jpg',
+        image:'/img/one-synergy-3.jpg',
         title:'Pertambangan'
-    },
-    {
-        image:'/spirit4.jpeg',
-        title:'Industri Konstruksi'
-    },
-    {
-        image:'/spirit5.jpg',
-        title:'Energi'
     }
 ])
 
@@ -43,18 +35,15 @@ const onSwiper = (swiper) => {
     <Swiper 
     :slides-per-view="3" 
     :space-between="30"  
-    :autoplay="{delay:1, disableOnInteraction: false}" 
-    :loop="true" 
     :speed="5000" 
-    :centered-slides="true" 
-   
+    :loop="true"
     :modules="modules"
     @swiper="onSwiper"
     @slideChange="onSlideChange"
     class="marquee-swiper">
-        <SwiperSlide v-for="slide in 6" :key="slide" >
+        <SwiperSlide v-for="slide in 3" :key="slide" >
             <div class="max-w[400px] w-full relative group">
-                <img :src="`sinergi${slide}.jpg`" alt="" class="max-w-[400px] w-full h-[300px] object-cover rounded-xl opacity-90 group-hover:opacity-100 duration-200">
+                <img :src="`/img/one-synergy-${slide}.jpg`" alt="" class="max-w-[400px] w-full h-[300px] object-cover rounded-xl opacity-90 group-hover:opacity-100 duration-200">
           
             </div>
            

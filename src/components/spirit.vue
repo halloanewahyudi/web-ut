@@ -8,24 +8,24 @@ import thumb from './thumb.vue'
 
 const content = ref([
     {
-        image:'/spirit1.png',
+        image:'/img/bisnis-construction-machinery2.jpg ',
         title:'Mesin Konstruksi'
     },
 
     {
-        image:'/spirit2.jpg',
+        image:'/img/business-mining-contracting.jpg',
         title:'Kontraktor Penambangan'
     },
     {
-        image:'/spirit3.jpg',
+        image:'/img/spirit3.jpg',
         title:'Pertambangan'
     },
     {
-        image:'/spirit4.jpeg',
+        image:'/img/business-construction-industry.jpg',
         title:'Industri Konstruksi'
     },
     {
-        image:'/spirit5.jpg',
+        image:'/img/business-energy.jpg',
         title:'Energi'
     }
 ])
