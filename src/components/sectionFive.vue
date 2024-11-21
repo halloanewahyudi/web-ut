@@ -42,6 +42,11 @@ onMounted(() => {
 </script>
 
 <style  scoped>
+
+.one-spirit{
+  background-image: url('./bg-spirit.png') ;
+}
+
 .one-spirit  .spirit-title {
   transform-origin: center center;
   display: inline-block; /* Ensures proper scaling of text */

@@ -1,51 +1,54 @@
 <script setup>
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import 'swiper/css';
-import 'swiper/css/navigation'; // Import CSS untuk navigasi
-import news from '@/assets/news-content.json'; // Pastikan ini memiliki data valid
-import { ref } from "vue";
+import news from '@/assets/news-content.json';
+import { ref, onMounted } from "vue";
 
-// Konfigurasi Swiper modules
-const modules = ref([Autoplay, Navigation]);
-
-// Event handler
 const onSwiper = (swiper) => {
-    console.log('Swiper instance:', swiper);
+    console.log(swiper);
 };
 const onSlideChange = () => {
-    console.log('Slide changed');
+    console.log('slide change');
+};
+
+// Swiper instance reference
+const swiperRef = ref(null);
+
+// Modules
+const modules = ref([Autoplay]);
+
+// Navigation controls
+const slideNext = () => {
+    if (swiperRef.value) swiperRef.value.slideNext();
+};
+const slidePrev = () => {
+    if (swiperRef.value) swiperRef.value.slidePrev();
 };
 </script>
 
 <template>
     <div>
         <div class="container">
-            <div class="grid grid-cols-1 lg:grid-cols-6 relative">
-                <!-- Tombol Navigasi di luar Swiper -->
-                <div class="kiri lg:col-span-2 flex items-center justify-between">
-                    <button class="swiper-prev bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-                        Prev
-                    </button>
-                    <button class="swiper-next bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-                        Next
-                    </button>
+            <div class="grid grid-cols-1 lg:grid-cols-6">
+                <!-- Tombol navigasi -->
+                <div class="kiri lg:col-span-2 flex items-center justify-center">
+                    <button @click="slidePrev" class="btn-nav prev-btn">Prev</button>
                 </div>
-
+                
                 <!-- Swiper -->
-                <div class="lkanan lg:col-span-4">
+                <div class="kanan lg:col-span-4">
                     <Swiper
-                        :modules="modules"
+                        ref="swiperRef"
                         :autoplay="{ delay: 3000, disableOnInteraction: false }"
                         :slides-per-view="3"
                         :space-between="30"
                         :loop="true"
-                        navigation="{ nextEl: '.swiper-next', prevEl: '.swiper-prev' }"
                         @swiper="onSwiper"
                         @slideChange="onSlideChange"
+                        :modules="modules"
                         class="news-slide"
                     >
-                        <!-- Render slides -->
                         <SwiperSlide v-for="(item, index) in news" :key="index">
                             <div class="rounded-xl overflow-hidden">
                                 <img :src="item.image" alt="" class="w-full h-[240px] object-cover">
@@ -56,28 +59,36 @@ const onSlideChange = () => {
                         </SwiperSlide>
                     </Swiper>
                 </div>
+
+                <!-- Tombol navigasi -->
+                <div class="kiri lg:col-span-2 flex items-center justify-center">
+                    <button @click="slideNext" class="btn-nav next-btn">Next</button>
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
-/* Custom Style untuk Tombol Navigasi */
-.swiper-prev,
-.swiper-next {
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    z-index: 10; /* Agar berada di atas elemen lain */
+/* Styling tombol navigasi */
+.btn-nav {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.swiper-prev:hover,
-.swiper-next:hover {
-    transform: scale(1.1);
+.btn-nav:hover {
+  background-color: #1d6fa5;
 }
 
-/* Tambahan styling opsional */
+/* Styling Swiper */
 .news-slide {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 </style>
