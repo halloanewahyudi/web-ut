@@ -32,64 +32,40 @@ const slidePrev = () => {
 </script>
 
 <template>
-    <div>
-        <div class="container z-[1000]">
-            <div class="grid grid-cols-1 lg:grid-cols-6">
-                <!-- Tombol navigasi -->
-                <h4>Judul News</h4>
-                <!-- Swiper -->
-                <div class="kanan lg:col-span-4">
-                    <Swiper
-                        ref="swiperInstance"
-                        :autoplay="{ delay: 3000, disableOnInteraction: false }"
-                        :slides-per-view="3"
-                        :space-between="30"
-                        :loop="true"
-                        @swiper="onSwiper"
-                        @slideChange="onSlideChange"
-                        :modules="modules"
-                        class="news-slide"
-                    >
-                        <SwiperSlide v-for="(item, index) in news" :key="index">
-                            <div class="rounded-xl overflow-hidden">
-                                <img :src="item.image" alt="" class="w-full h-[240px] object-cover">
-                                <div class="p-4 lg:p-6 bg-white">
-                                    <h4>{{ item.title }}</h4>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
+    <div class="w-full">
+        <Swiper ref="swiperInstance" :autoplay="{ delay: 3000, disableOnInteraction: false }" :slides-per-view="3"
+            :space-between="30" :loop="true" @swiper="onSwiper" @slideChange="onSlideChange" :modules="modules"
+            class="news-slide">
+            <SwiperSlide v-for="(item, index) in news" :key="index">
+                <div class="rounded-xl overflow-hidden   ">
+                    <img :src="item.image" alt="" class="w-full h-[240px] object-cover rounded-xl shadow-xl mb-5">
+                    <h4>{{ item.title }}</h4>
                 </div>
-
-                <!-- Tombol navigasi -->
-                <div class="kiri lg:col-span-2 flex items-center justify-center">
-                    <button @click="slideNext" class="btn-nav next-btn">Next</button>
-                </div>
-            </div>
-        </div>
+            </SwiperSlide>
+        </Swiper>
     </div>
 </template>
 
 <style scoped>
 /* Styling tombol navigasi */
 .btn-nav {
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 8px;
-  background-color: #3498db;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .btn-nav:hover {
-  background-color: #1d6fa5;
+    background-color: #1d6fa5;
 }
 
 /* Styling Swiper */
 .news-slide {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 </style>

@@ -8,7 +8,7 @@
 
       <!-- Bagian kanan (teks) -->
       <div class="kanan lg:min-h-screen p-6 lg:p-12 xl:p-20 flex flex-col  gap-8">
-        <h2 class="text-3xl lg:text-5xl xl:text-8xl  break-words" v-html="props.title"></h2>
+        <h2 class="text-3xl lg:text-5xl xl:text-8xl  break-words text-brand-blue" v-html="props.title"></h2>
         <div>
           <div v-if="!showMore" v-html="props.content.substring(0, 300)" class="leading-relaxed"></div>
           <div v-else v-html="props.content" class="leading-relaxed text-more"></div>

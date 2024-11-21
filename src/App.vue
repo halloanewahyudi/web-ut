@@ -39,7 +39,7 @@ onErrorCaptured((err, instance, info) => {
 <sectionFour />
 <sectionFive />
 <sectionSix />
-<news />
+
 </ScrollView> <!-- end scrollview -->
 <Footer />
 </template>
