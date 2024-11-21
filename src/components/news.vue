@@ -39,7 +39,7 @@ const slidePrev = () => {
             <SwiperSlide v-for="(item, index) in news" :key="index">
                 <div class="rounded-xl overflow-hidden   ">
                     <img :src="item.image" alt="" class="w-full h-[240px] object-cover rounded-xl shadow-xl mb-5">
-                    <h4 class="!text-neutral-600">{{ item.title }}</h4>
+                    <h4 class="!text-neutral-700">{{ item.title }}</h4>
                 </div>
             </SwiperSlide>
         </Swiper>

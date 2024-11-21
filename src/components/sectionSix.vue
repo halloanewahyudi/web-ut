@@ -3,10 +3,10 @@
         <div class="container flex flex-col gap-5 lg:gap-10">
            
                 <div class="max-w-[600px]">
-                    <h2 class=" text-5xl lg:text-6xl xl:text-8xl mb-5 hover:text-brand-yellow"> <a href="#">
+                    <h2 class=" text-5xl lg:text-6xl xl:text-8xl mb-5 hover:text-brand-yellow"> <a href="#" >
                     <span class="text-brand-yellow font-semibold"> One </span> Synergy </a>
                 </h2>
-                <p>
+                <p class="text-neutral-700">
                     United Tractors bersinergi dengan pelanggan untuk membangun hubungan mutualisme dan keberhasilan
                     bersama. Dalam setiap kontribusi yang diberikan.
                 </p>
