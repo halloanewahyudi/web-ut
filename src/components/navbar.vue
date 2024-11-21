@@ -53,7 +53,7 @@
                 <div class="bg-white bg-opacity-95 p-4 rounded-xl" >
                     <div class="flex justify-between items-center h-6">
                     <hamburger  @click="bukaMenu"/>
-                    <div class="flex border border-brand-black rounded-xl lang overflow-hidden">
+                    <div class="flex border border-nutral-800 rounded-xl lang overflow-hidden">
                        <a href="" class="py-1 px-2 active">ID</a> <a href="" class="py-1 px-2">EN</a>
                     </div>
                     <search class="w-5 h-5" />
@@ -63,11 +63,11 @@
                         <li v-for="(menu, index) in menus" :key="index" @mouseenter="select(item)"
                             @mouseleave="unselect(item)">
                             <a href="#" @mouseenter="select(menu, index)" class="hover:text-brand-blue duration-200"> {{ menu.name }}</a>
-                            <ul class="sub-menu" v-if="menu.child !=''">
+                          <!--   <ul class="sub-menu" v-if="menu.child !=''">
                                <li v-for="ch in menu.child" :key="ch">
                                 <a href="#"> {{ ch.name }}</a>
                                </li>
-                            </ul>
+                            </ul> -->
                             </li>
                     </ul>
                 </div>

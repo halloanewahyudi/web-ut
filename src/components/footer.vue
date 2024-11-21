@@ -14,9 +14,9 @@
         </div>
         <div class="flex gap-4 justify-between items-end">
             <div class="flex items-center gap-5 flex-wrap">
-            <img src="/logo-ut.png" alt="" class="h-14 grayscale invert">
-            <img src="/astra.png" alt="" class="h-14 grayscale invert">
-            <img src="/logosatu.png" alt="" class="h-14">
+            <img src="/logo-ut.png" alt="" class="lg:h-14  grayscale invert">
+            <img src="/astra.png" alt="" class="lg:h-14  grayscale invert">
+            <img src="/logosatu.png" alt="" class="lg:h-14 ">
         </div>
         <div class="flex gap-4 items-center text-xl">
             <youtube class="w-7 h-7 hover:text-brand-yellow duration-200" />

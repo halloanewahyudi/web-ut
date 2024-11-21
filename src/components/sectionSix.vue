@@ -16,7 +16,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-6 ">
             <div class="lg:col-span-2 clear-start flex flex-col justify-center items-center mb-5">
                 <p class="font-semibold text-brand-blue">News Room</p>
-                <h3 class="text-3xl lg:text-6xl font-semibold text-center text-brand-blue">Berita <br> Terkini</h3>
+                <h3 class=" text-5xl lg:text-6xl font-semibold text-center text-brand-blue">Berita <br> Terkini</h3>
             </div>
             <div class="lg:col-span-4">
                 <News />
