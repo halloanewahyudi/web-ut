@@ -3,10 +3,10 @@
         <div class="atas py-2 ">
             <div class="container">
                 <div class="nav-wrap flex items-center justify-between gap-6">
-                    <img src="/logo-ut-white.png" alt="" srcset="" class="h-10 lg:h-12">
+                    <img src="/logo-ut-new.png" alt="" srcset="" class="h-10 lg:h-12">
                  <!--    bersatu dan tombol lang -->
                     <div class="flex items-center gap-4">
-                        <div class="flex border border-white text-white rounded-lg lang overflow-hidden text-sm">
+                        <div class="hidden lg:flex border border-white text-white rounded-lg lang overflow-hidden text-sm">
                        <a href="" class="py-1 px-2 active">ID</a> <a href="" class="py-1 px-2">EN</a>
                     </div>
                         <img src="/logosatu.png" alt="" class="h-10 lg:h-14">

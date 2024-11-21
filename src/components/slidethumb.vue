@@ -1,8 +1,8 @@
 <template>
     <div class="">
-        <video-background src="/utclip4.mp4" class="w-full min-h-screen flex flex-col justify-center items-center relative">
+        <video-background src="/utclip4.mp4" class="w-full min-h-screen flex flex-col justify-center items-center relative ">
             <div class="layer"></div>
-            <div class="flex flex-col gap-6 lg:gap-10 text-white min-h-screen justify-end p-6 lg:p-10">
+            <div class="flex flex-col gap-6 lg:gap-10 text-white min-h-screen justify-end p-6 lg:p-10 pt-20">
                 <swiper :modules="modules" :slides-per-view="1" :space-between="10" :speed="1500" @swiper="onSwiper"
                     :centered-slides="true" @slideChange="onSlideChange" :thumbs="{ swiper: thumbsSwiper }"
                     class="swiper-cover ">

@@ -34,7 +34,24 @@ const slidePrev = () => {
 <template>
     <div class="w-full">
         <Swiper ref="swiperInstance" :autoplay="{ delay: 3000, disableOnInteraction: false }" :slides-per-view="3"
-            :space-between="30" :loop="true" @swiper="onSwiper" @slideChange="onSlideChange" :modules="modules"
+            :space-between="30" :loop="true" @swiper="onSwiper" @slideChange="onSlideChange" :modules="modules" :breakpoints="{
+      '320': {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      '640': {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      '768': {
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+      '1024': {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    }"
             class="news-slide">
             <SwiperSlide v-for="(item, index) in news" :key="index">
                 <div class="rounded-xl overflow-hidden   ">

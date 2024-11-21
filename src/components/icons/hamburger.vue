@@ -25,7 +25,7 @@ const toggleMenu = () => {
 }
 
 .bar {
-   @apply w-7 h-[2px] transition-all ease-in-out duration-300 bg-brand-yellow my-1;
+   @apply w-7 h-[2px] transition-all ease-in-out duration-300 bg-brand-black my-1;
 }
 
 .rotate45 {
