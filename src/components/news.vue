@@ -13,33 +13,34 @@ const onSlideChange = () => {
 };
 
 // Swiper instance reference
-const swiperRef = ref(null);
+const swiperInstance = ref(null);
 
 // Modules
 const modules = ref([Autoplay]);
 
 // Navigation controls
 const slideNext = () => {
-    if (swiperRef.value) swiperRef.value.slideNext();
+    if (swiperInstance.value?.swiper) {
+        swiperInstance.value.swiper.slideNext();
+    }
 };
 const slidePrev = () => {
-    if (swiperRef.value) swiperRef.value.slidePrev();
+    if (swiperInstance.value?.swiper) {
+        swiperInstance.value.swiper.slidePrev();
+    }
 };
 </script>
 
 <template>
     <div>
-        <div class="container">
+        <div class="container z-[1000]">
             <div class="grid grid-cols-1 lg:grid-cols-6">
                 <!-- Tombol navigasi -->
-                <div class="kiri lg:col-span-2 flex items-center justify-center">
-                    <button @click="slidePrev" class="btn-nav prev-btn">Prev</button>
-                </div>
-                
+                <h4>Judul News</h4>
                 <!-- Swiper -->
                 <div class="kanan lg:col-span-4">
                     <Swiper
-                        ref="swiperRef"
+                        ref="swiperInstance"
                         :autoplay="{ delay: 3000, disableOnInteraction: false }"
                         :slides-per-view="3"
                         :space-between="30"

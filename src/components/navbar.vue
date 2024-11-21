@@ -17,7 +17,7 @@
         <!-- navbar di mulai ==================== -->
         <nav class="nav-bawah nav-dekstop hidden lg:block ">
             <div class="container">
-                <div class="py-3 px-4 rounded-2xl bg-white bg-opacity-70 relative max-h-max h-full"
+                <div class="py-3 px-6 rounded-2xl bg-white bg-opacity-70 relative max-h-max h-full"
                     @mouseleave="unselect">
                     <div class="flex flex-wrap justify-between items-center w-full">
                         <ul class="flex items-center justify-between gap-2 xl:gap-6 py-2 w-auto flex-wrap ">
