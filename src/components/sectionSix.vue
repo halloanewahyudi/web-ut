@@ -1,15 +1,17 @@
 <template>
-    <section class="section min-h-screen flex flex-col justify-center items-center py-20 ">
+    <section class="section min-h-screen flex flex-col py-20 ">
         <div class="container flex flex-col gap-5 lg:gap-10">
-            <div class="max-w-xl mx-auto text-center group">
-                <h2 class=" text-5xl lg:text-6xl xl:text-8xl mb-5 hover:text-brand-yellow"> <a href="#">
+           
+                <div class="max-w-[600px]">
+                    <h2 class=" text-5xl lg:text-6xl xl:text-8xl mb-5 hover:text-brand-yellow"> <a href="#">
                     <span class="text-brand-yellow font-semibold"> One </span> Sinergy </a>
                 </h2>
                 <p>
                     United Tractors bersinergi dengan pelanggan untuk membangun hubungan mutualisme dan keberhasilan
                     bersama. Dalam setiap kontribusi yang diberikan.
                 </p>
-            </div>
+                </div>
+       
             <!--       <Sinergi /> -->
             <div class="grid grid-cols-1 lg:grid-cols-6 ">
             <div class="lg:col-span-2 clear-start flex flex-col justify-center items-center">
