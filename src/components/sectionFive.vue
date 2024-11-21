@@ -1,5 +1,5 @@
 <template>
-    <section class="one-spirit min-h-screen flex flex-col justify-center items-center py-20 bg-brand-blue text-white">
+    <section class="one-spirit min-h-screen flex flex-col justify-center items-center py-20  text-white">
          <div class="container flex flex-col gap-5 lg:gap-8">
             <div class="max-w-xl mx-auto text-center group">
                 <h2 class="spirit-title text-5xl lg:text-6xl xl:text-8xl mb-5 hover:text-brand-yellow"> <a href="#">One Spirit </a> </h2>
