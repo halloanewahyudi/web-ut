@@ -13,12 +13,12 @@
             </div>
         </div>
         <div class="flex gap-4 justify-between items-end">
-            <div class="flex items-center gap-5 flex-wrap">
+            <div class="flex flex-wrap items-center gap-5 ">
             <img src="/logo-ut.png" alt="" class="lg:h-14  grayscale invert">
             <img src="/astra.png" alt="" class="lg:h-14  grayscale invert">
             <img src="/logosatu.png" alt="" class="lg:h-14 ">
         </div>
-        <div class="flex gap-4 items-center text-xl">
+        <div class="flex gap-4 items-center text-xl ">
             <youtube class="w-7 h-7 hover:text-brand-yellow duration-200" />
             <instagram class="w-6 h-6  hover:text-brand-yellow duration-200" />
             <linkedin  class="w-6 h-6  hover:text-brand-yellow duration-200 "/>
@@ -27,7 +27,7 @@
         </div>
 
         <div class="text-right py-2 text-sm border-t border-blue-400 border-opacity-40">
-            © 2024 United Tractors all right reserved.
+            © 2024 United Tractors all right reserved.| powered by <a href="https://proweb.co.id" target="_blank">proweb </a> 
         </div>
 
         </div>
