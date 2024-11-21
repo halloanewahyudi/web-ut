@@ -27,7 +27,7 @@
         </div>
 
         <div class="text-right py-2 text-sm border-t border-blue-400 border-opacity-40">
-            © 2024 United Tractors all right reserved.| powered by <a href="https://proweb.co.id" target="_blank">proweb </a> 
+            © 2024 United Tractors all right reserved | powered by <a href="https://proweb.co.id" target="_blank">proweb </a> 
         </div>
 
         </div>
