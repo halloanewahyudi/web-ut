@@ -76,7 +76,7 @@ onUnmounted(() => {
 }
 
 .fixed-image {
-  @apply lg:fixed z-10 top-0 left-0 min-h-screen lg:w-1/2 opacity-0 transition-all ease-in-out duration-300;
+  @apply lg:fixed z-0 top-0 left-0 min-h-screen lg:w-1/2 opacity-0 transition-all ease-in-out duration-300;
 }
 
 .kanan {
